@@ -10,7 +10,8 @@ namespace NoivaeCia
     {
         static void Main(string[] args)
         {
-            Espaco b = new Espaco("B", 100);
+            Console.WriteLine("teste");
+            Console.ReadLine();
             
         }
     }
