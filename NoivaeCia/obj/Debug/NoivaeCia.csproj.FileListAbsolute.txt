@@ -1,0 +1,8 @@
+C:\Users\diogo\Source\Repos\NoivaECia\NoivaeCia\bin\Debug\NoivaeCia.exe.config
+C:\Users\diogo\Source\Repos\NoivaECia\NoivaeCia\bin\Debug\NoivaeCia.exe
+C:\Users\diogo\Source\Repos\NoivaECia\NoivaeCia\bin\Debug\NoivaeCia.pdb
+C:\Users\diogo\Source\Repos\NoivaECia\NoivaeCia\obj\Debug\NoivaeCia.csproj.AssemblyReference.cache
+C:\Users\diogo\Source\Repos\NoivaECia\NoivaeCia\obj\Debug\NoivaeCia.csproj.SuggestedBindingRedirects.cache
+C:\Users\diogo\Source\Repos\NoivaECia\NoivaeCia\obj\Debug\NoivaeCia.csproj.CoreCompileInputs.cache
+C:\Users\diogo\Source\Repos\NoivaECia\NoivaeCia\obj\Debug\NoivaeCia.exe
+C:\Users\diogo\Source\Repos\NoivaECia\NoivaeCia\obj\Debug\NoivaeCia.pdb
