@@ -10,7 +10,7 @@ namespace NoivaeCia
     {
         static void Main(string[] args)
         {
-            Teste gabriel
+            Espaco b = new Espaco("B", 100);
             
         }
     }
