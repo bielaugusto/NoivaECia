@@ -10,8 +10,13 @@ namespace NoivaeCia
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("teste");
+            Noivaecia noivaecia = new Noivaecia();
+            noivaecia.CriarCerimonia(new DateTime(2024, 04, 11), 300,"111111112");
+            noivaecia.Informacoes("1111111122");
+        
             Console.ReadLine();
+
+
             
         }
     }

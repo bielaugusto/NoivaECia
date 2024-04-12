@@ -12,11 +12,14 @@ namespace NoivaeCia
         public int Convidados { get; set; }
         public DateTime Data { get; set; }
 
-        public Cerimonia(DateTime data, int convidados, Espaco espaco) 
+        public string CPFNoiva { get; set; }
+
+        public Cerimonia(DateTime data, int convidados, Espaco espaco, string cpfnoiva) 
         {
             this.Convidados = convidados;
             this.Data = data;
             this.Espaco = espaco;
+            this.CPFNoiva = cpfnoiva;
         }
     }
 }

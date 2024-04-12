@@ -9,6 +9,7 @@ namespace NoivaeCia
     internal class Noivaecia
     {
         public Espaco[] Espacos = new Espaco[8];
+        public Cerimonia[] Cerimonias = new Cerimonia[31];
         
         public Noivaecia() 
         {
@@ -113,7 +114,7 @@ namespace NoivaeCia
             }
         }
 
-        public bool CriarCerimonia(DateTime data, int convidados, Espaco espaco)
+        public bool CriarCerimonia(DateTime data, int convidados, string cpfnoiva)
         {
             Espaco disponivel = VerificaEspaco(data, convidados);
             if (disponivel.Capacidade == -1)
@@ -128,10 +129,34 @@ namespace NoivaeCia
             }
             else
             {
-                new Cerimonia(data, convidados, disponivel);
-                Console.WriteLine("Cerimonia no espaço {0} confirmada!", disponivel.Tipo);
-                return true;
+                Cerimonia nova = new Cerimonia(data, convidados, disponivel,cpfnoiva);
+                for(int i = 0; i < Cerimonias.Length; i++)
+                {
+                    if (Cerimonias[i] == null)
+                    {
+                        Cerimonias[i] = nova;
+                        Console.WriteLine("Cerimonia no espaço {0} confirmada!", disponivel.Tipo);
+                        return true;
+                    }
+                }
+                Console.WriteLine("Agendamento cancelado");
+                return false;
             }
         }
+
+        public bool Informacoes(string cpfnoiva)
+        {
+            for (int i = 0; i < Cerimonias.Length; i++)
+            {
+                if (Cerimonias[i]!=null && Cerimonias[i].CPFNoiva == cpfnoiva)
+                {
+                    Console.WriteLine("Casamento da noiva de cpf {0} ocorrera no dia {1} para {2} convidados", Cerimonias[i].CPFNoiva, Cerimonias[i].Data, Cerimonias[i].Convidados);
+                    return true;
+                }                
+            }
+             Console.WriteLine("CPF de noiva invalido ou casamento não cadastrado ainda"); 
+            return false;
+        }
+        
     }
 }
