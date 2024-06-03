@@ -33,6 +33,7 @@ namespace NoivaeCia
 
         public Espaco VerificaEspaco(DateTime data, int convidados)
         {
+            //verifica a quantidade de convidados e retorna o espaço adequado
             if (convidados <= 50)
             {
                 Console.WriteLine("a proxima data disponivel é em " + Espacos[6].VerificaDataDisponivel(data)+" No espaço" + Espacos[6].Tipo
@@ -116,6 +117,7 @@ namespace NoivaeCia
 
         public bool CriarCerimonia(DateTime data, int convidados, string cpfnoiva)
         {
+            //cria a cerimonia com o espaço ideal
             Espaco disponivel = VerificaEspaco(data, convidados);
             if (disponivel.Capacidade == -1)
             {
